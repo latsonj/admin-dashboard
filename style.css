@@ -21,6 +21,10 @@ input, textarea, button, select {
   font: inherit;
 }
 
+li {
+  list-style-type: none;
+}
+
 .full-layout {
   display: grid;
   height: 100vh;
