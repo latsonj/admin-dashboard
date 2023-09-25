@@ -28,23 +28,30 @@ li {
 .full-layout {
   display: grid;
   height: 100vh;
+
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
 }
 
 .header {
   grid-column: 2 / 3;
+
   background-color: gainsboro;
 }
 
 .sidebar {
   grid-row: 1 / 3;
   grid-column: 1 / 2;
+
   background-color: green;
+
+  display: grid;
+  grid-template-rows: 1fr 3fr 2fr;
 }
 
 .main-content {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+
   background-color: silver;
 }
