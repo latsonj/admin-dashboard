@@ -58,4 +58,12 @@ li {
   grid-row: 2 / 3;
 
   background-color: silver;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-content > div:first-child {
+  grid-area: 1 / 1 / 3 / 2;
 }
