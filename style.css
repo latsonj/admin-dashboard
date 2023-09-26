@@ -5,18 +5,12 @@
   font-weight: 700;
 }
 
-
-
-
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url('./assets/fonts/roboto-light-webfont.woff2') format('woff2'),
        url('./assets/fonts/roboto-light-webfont.woff') format('woff');
   font-weight: 300;
 }
-
-
-
 
 @font-face {
   font-family: 'Roboto', sans-serif;
@@ -25,14 +19,15 @@
   font-weight: 500;
 }
 
-
-
-
 @font-face {
   font-family: 'Roboto', sans-serif;
   src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
        url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
   font-weight: 400;
+}
+
+:root {
+  --icon-size: 1.25em;
 }
 
 *, *::before, * ::after {
@@ -83,7 +78,7 @@ li {
   background-color: green;
 
   display: grid;
-  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .main-content {
@@ -104,4 +99,14 @@ li {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.icon {
+  display: inline;
+  width: var(--icon-size);
+}
+
+.profile-image {
+  width: calc(var(--icon-size) * 3);
+  border-radius: 50%;
 }
