@@ -67,3 +67,8 @@ li {
 .main-content > div:first-child {
   grid-area: 1 / 1 / 3 / 2;
 }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
