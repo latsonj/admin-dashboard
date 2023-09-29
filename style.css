@@ -36,6 +36,7 @@
   --color-grey: #737373;
   --color-green: #3cb371;
   --input-bg: #d4d4d8;
+  --color-button-hover: #16a34a;
 
   --card-padding: 0.25rem 1.5rem;
   --project-padding: 5rem 2rem;
@@ -147,15 +148,15 @@ li {
   display: inline;
   padding: var(--card-padding);
   margin-left: calc(var(--base-margin) * 1.5);
+  width: 100%;
+  font-size: 0.875rem;
 
   position: relative;
   right: 0;
 
-  width: 100%;
   border: none;
   border-radius: 15px;
   background-color: var(--input-bg);
-  font-size: 0.875rem;
 }
 
 .sidebar {
@@ -173,7 +174,7 @@ li {
   padding: var(--card-padding);
   font-size: 1.2rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 2;
 }
 
 .sidebar li > img {
@@ -223,6 +224,8 @@ li {
 
   margin: var(--base-margin);
   padding: var(--card-padding);
+
+  box-shadow: 1px 5px 7px var(--input-bg);
 }
 
 .main-content .announcements-container,
@@ -308,4 +311,39 @@ li {
 .user-name {
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+.header button:hover {
+  background-color: var(--color-button-hover);
+  transform: translateY(-1px);
+}
+
+.sidebar .dashboard-links:hover,
+.sidebar .help-links:hover {
+  background-color: var(--color-button-hover);
+  border-radius: 5px;
+  padding: 0 5px;
+  transform: translateY(-1px);
+  text-decoration: underline;
+}
+
+.other-users:hover,
+.header .user-name:hover {
+  transform: translateY(-1px);
+  text-decoration: underline;
+}
+
+.project-item img:hover,
+.header img:hover {
+  transform: translateY(-1px);
+}
+
+.other-users,
+button,
+.sidebar .dashboard-links,
+.sidebar .help-links,
+.project-item img,
+.header img,
+.header .user-name {
+  transition: 0.1s;
 }
