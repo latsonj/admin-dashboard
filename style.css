@@ -114,6 +114,10 @@ li {
   padding: var(--card-padding);
 }
 
+.header .subsection-container:nth-child(3) {
+  margin-bottom: var(--base-margin);
+}
+
 .header .subsection-container:nth-child(3) img {
   width: calc(var(--profile-image-size) * 1.25);
 }
@@ -160,14 +164,33 @@ li {
 
   display: grid;
   grid-template-rows: min-content min-content min-content;
+  row-gap: 4rem;
 
   background-color: var(--color-green);
   color: var(--color-black);
+
+  min-width: max-content;
+  padding: var(--card-padding);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.sidebar li > img {
+  margin-right: 1rem;
+}
+
+.sidebar h1 > img {
+  width: 2.5rem;
+}
+
+.sidebar h1:first-child {
+  padding-top: 2rem;
 }
 
 .sidebar img,
 .header .icon {
-  vertical-align: middle;
+  vertical-align: text-bottom;
 }
 
 .main-content {
