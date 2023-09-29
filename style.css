@@ -118,6 +118,10 @@ li {
   width: calc(var(--profile-image-size) * 1.25);
 }
 
+.header .subsection-container:nth-child(3) p {
+  margin-bottom: calc(var(--base-margin) * 0.5);
+}
+
 .header button {
   border: none;
   border-radius: 15px;
